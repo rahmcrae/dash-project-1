@@ -1,8 +1,10 @@
 import dash
 from dash import html, dcc
 import flask
+from layout_template import layout
 
 app = dash.Dash(__name__)
+app.layout = layout
 
 server = flask.Flask(__name__)
 server = app.server
